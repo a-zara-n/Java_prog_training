@@ -14,9 +14,14 @@ class JavaRen4 {
         wide            = input_size * 2 - 1;
         Center          = Math.round(wide/2);
         for(outer_i=0;outer_i<input_size;outer_i++){
-            String buf="0";
+            String buf;
+            if(outer_i == input_size - 1){
+                buf = input_string;
+            }else{
+                buf = "0";
+            }
             for(inner_i=1;inner_i<wide;inner_i++){
-                if(inner_i == Center+outer_i ){
+                if(inner_i >= Center-outer_i & Center+outer_i >= inner_i ){
                     buf += input_string;
                 }else{
                     buf += inner_i;
