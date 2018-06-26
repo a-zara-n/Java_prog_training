@@ -4,7 +4,7 @@ class JavaRen5 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader bin = new BufferedReader ( new InputStreamReader(System.in) );
-        
+
         //=== Variable declaration ===
         String  name[];
         int     score[];
